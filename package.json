@@ -4,7 +4,7 @@
   "description": "Implementation of the Lunh algorithm in Javascript",
   "main": "index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -25,5 +25,27 @@
   "bugs": {
     "url": "https://github.com/recodable/lunh/issues"
   },
-  "homepage": "https://github.com/recodable/lunh#readme"
+  "homepage": "https://github.com/recodable/lunh#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@recodable/prettier-config": "^1.0.0",
+    "@types/jest": "^24.0.19",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.1.0",
+    "typescript": "^3.6.4"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts"
+    ],
+    "transform": {
+      "^.+\\.(t|j)s$": "ts-jest"
+    },
+    "testEnvironment": "node"
+  },
+  "prettier": "@recodable/prettier-config"
 }
