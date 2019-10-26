@@ -21,7 +21,13 @@ import lunh from '@recodable/lunh';
 
 lunh('4242424242424242'); // returns true as "4242424242424242" is valid credit card
 
-lunh('4242424242424242'); // returns false for invalid credit card
+lunh('4242424242424241'); // returns false for invalid credit card
+
+lunh('4242 4242 4242 4242'); // we also accept spaces
+
+lunh('4242-4242-4242-4242'); // and dashes
+
+lunh('424242424242hello'); // returns false as we accept only numbers, spaces and dashes
 ```
 
 ## Credit

@@ -2,7 +2,6 @@ export default function lunh(value) {
   // Accept only digits, dashes or spaces
   if (/[^0-9-\s]+/.test(value)) return false;
 
-  // The Luhn Algorithm. It's so pretty.
   let nCheck = 0,
     bEven = false;
   value = value.replace(/\D/g, '');
