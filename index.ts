@@ -1,21 +1,22 @@
-export default function lunh(value) {
+export default function lunh(value: string): boolean {
   // Accept only digits, dashes or spaces
   if (/[^0-9-\s]+/.test(value)) return false;
 
-  let bEven = false;
   value = value.replace(/\D/g, '');
 
-  const nCheck = value
+  const total: number = value
     .split('')
     .reverse()
-    .reduce((nCheck, char) => {
-      let nDigit = parseInt(char, 10);
+    .reduce((total: number, char: string, index: number): number => {
+      let value = +char;
+      const isEven = (index + 1) % 2 === 0;
 
-      if (bEven && (nDigit *= 2) > 9) nDigit -= 9;
+      if (isEven) value *= 2;
 
-      bEven = !bEven;
-      return nCheck + nDigit;
+      if (value > 9) value -= 9;
+
+      return total + value;
     }, 0);
 
-  return nCheck % 10 == 0;
+  return total % 10 === 0;
 }
