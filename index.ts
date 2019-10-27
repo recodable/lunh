@@ -1,21 +1,22 @@
-export default function lunh(value) {
+export default function lunh(value: string): boolean {
   // Accept only digits, dashes or spaces
   if (/[^0-9-\s]+/.test(value)) return false;
 
-  // The Luhn Algorithm. It's so pretty.
-  let nCheck = 0,
-    bEven = false;
   value = value.replace(/\D/g, '');
 
-  for (var n = value.length - 1; n >= 0; n--) {
-    var cDigit = value.charAt(n),
-      nDigit = parseInt(cDigit, 10);
+  const total: number = value
+    .split('')
+    .reverse()
+    .reduce((total: number, char: string, index: number): number => {
+      let value = +char;
+      const isEven = (index + 1) % 2 === 0;
 
-    if (bEven && (nDigit *= 2) > 9) nDigit -= 9;
+      if (isEven) value *= 2;
 
-    nCheck += nDigit;
-    bEven = !bEven;
-  }
+      if (value > 9) value -= 9;
 
-  return nCheck % 10 == 0;
+      return total + value;
+    }, 0);
+
+  return total % 10 === 0;
 }
