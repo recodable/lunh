@@ -17,8 +17,8 @@ or
 ### Example
 
 ```js
-import lunh from '@recodable/lunh';
-// or `const lunh = require('@recodable/lunh');` for Node.js module
+import { lunh } from '@recodable/lunh';
+// or `const { lunh } = require('@recodable/lunh');` for Node.js module
 
 lunh('4242424242424242'); // returns true as "4242424242424242" is valid credit card
 
