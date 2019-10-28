@@ -1,0 +1,6 @@
+test/
+index.ts
+README.md
+tsconfig.build.json
+tsconfig.json
+.vscode

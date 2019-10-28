@@ -2,9 +2,11 @@
   "name": "@recodable/lunh",
   "version": "1.0.0",
   "description": "Implementation of the Lunh algorithm in Javascript",
-  "main": "dist/index.js",
+  "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
+    "dist": "npm run build && cp package* dist && cd dist && npm publish",
     "test": "jest"
   },
   "repository": {
