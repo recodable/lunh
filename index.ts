@@ -9,7 +9,7 @@ export default function lunh(value: string): boolean {
     .reverse()
     .reduce((total: number, char: string, index: number): number => {
       let value = +char;
-      const isEven = (index + 1) % 2 === 0;
+      const isEven: boolean = (index + 1) % 2 === 0;
 
       if (isEven) value *= 2;
 
