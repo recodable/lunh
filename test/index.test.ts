@@ -1,6 +1,5 @@
 import { successfulStripeCreditCard, failedStripeCreditCard } from './stripe';
-import lunh = require('../index');
-
+import lunh from '../index';
 
 test("returns true for Stripe's testing credit card", () => {
   successfulStripeCreditCard.forEach(creditCard => {

@@ -1,4 +1,4 @@
-function lunh(value: string): boolean {
+export default function lunh(value: string): boolean {
   // Accept only digits, dashes or spaces
   if (/[^0-9-\s]+/.test(value)) return false;
 
@@ -21,4 +21,4 @@ function lunh(value: string): boolean {
   return total % 10 === 0;
 }
 
-export = lunh;
+module.exports = lunh;
