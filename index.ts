@@ -20,3 +20,5 @@ export default function lunh(value: string): boolean {
 
   return total % 10 === 0;
 }
+
+module.exports = lunh;

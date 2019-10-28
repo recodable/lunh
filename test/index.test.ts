@@ -1,5 +1,5 @@
-import lunh from '../index';
 import { successfulStripeCreditCard, failedStripeCreditCard } from './stripe';
+import lunh from '../index';
 
 test("returns true for Stripe's testing credit card", () => {
   successfulStripeCreditCard.forEach(creditCard => {
