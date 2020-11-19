@@ -464,10 +464,10 @@
     "@types/yargs" "^15.0.0"
     chalk "^4.0.0"
 
-"@recodable/prettier-config@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@recodable/prettier-config/-/prettier-config-1.0.0.tgz#7ca698f6cbb81206f5afaa20509e8f54fe8924e0"
-  integrity sha512-bCOVizcSawW9/XXehrmiiWgIKKsDj82uRRkO4KAjOV0zGfM7QMx0131lGaV2XgzBrcJVqNdV0Sh12A58K/r0eg==
+"@recodable/prettier-config@^0.0.1":
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/@recodable/prettier-config/-/prettier-config-0.0.1.tgz#290e13534cae0b5eaa6aabc0c39756696f86c1fb"
+  integrity sha512-oUVWlzrR46Ucx/VzER0Wh5IzBXsXMJ8f9XqdOLpfn6Tw9XyETrqSPIVd59fc1ED1ykX/OtzxotJlxib/tDvaMg==
 
 "@sinonjs/commons@^1.7.0":
   version "1.8.1"

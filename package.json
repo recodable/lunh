@@ -22,7 +22,7 @@
   ],
   "author": {
     "name": "Steven Yung",
-    "email": "hyiuen@fastmail.com"
+    "email": "hyiuen@recodable.io"
   },
   "license": "ISC",
   "bugs": {
@@ -33,7 +33,7 @@
     "access": "public"
   },
   "devDependencies": {
-    "@recodable/prettier-config": "^1.0.0",
+    "@recodable/prettier-config": "^0.0.1",
     "@types/jest": "^26.0.15",
     "@types/node": "^14.14.6",
     "jest": "^26.6.1",
